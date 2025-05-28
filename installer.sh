@@ -21,7 +21,9 @@ ln -ds "$HOME/.dsuperuser/bin/dsuperuser" "$HOME/.dsuperuser/bin/sudo"
 
 export PATH="$HOME/.dsuperuser/bin:$PREFIX/bin:$PATH"
 
-echo "export PATH=\"$HOME/.dsuperuser/bin:$PREFIX/bin:\$PATH\"" >> "$HOME/.bashrc"
+if ! grep -Fxq "export PATH=\"$HOME/.dsuperuser/bin:$PREFIX/bin:\$PATH\"" "$HOME/.bashrc"; then
+    echo "export PATH=\"$HOME/.dsuperuser/bin:$PREFIX/bin:\$PATH\"" >> "$HOME/.bashrc"
+fi
 
 # source "$HOME/.bashrc"
 
