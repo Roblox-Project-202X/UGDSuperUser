@@ -1,8 +1,8 @@
 #!/bin/bash
 
-curl -o "$TMPDIR/dsuperuser" https://raw.githubusercontent.com/Roblox-Project-202X/UGDSuperUser/refs/heads/main/dsuperuser
+curl -o "$TMPDIR/dsuperuser" https://raw.githubusercontent.com/Roblox-Project-202X/UGDSuperUser/refs/heads/development/dsuperuser
 
-curl -o "$TMPDIR/tsu-sudo" https://raw.githubusercontent.com/Roblox-Project-202X/UGDSuperUser/refs/heads/main/tsu-sudo
+curl -o "$TMPDIR/tsu-sudo" https://raw.githubusercontent.com/Roblox-Project-202X/UGDSuperUser/refs/heads/development/tsu-sudo
 
 mkdir -p "$HOME/.dsuperuser/bin"
 
