@@ -27,7 +27,7 @@ fi
 
 # source "$HOME/.bashrc"
 
-pkg i libsqlite -y
+# pkg i libsqlite -y
 echo
 dsuperuser sudo dsuperuser -v
 echo
