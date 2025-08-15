@@ -1,0 +1,27 @@
+name: Delete all commits
+
+on:
+  workflow_dispatch:
+
+jobs:
+  delete_history:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config --global user.email "mqh07112008@gmail.com"
+          git config --global user.name "Quang Huy Bot"
+
+      - name: Delete all commits
+        run: |
+          git checkout --orphan temp_branch
+          git add -A
+          git commit -m "Initial commit"
+          git branch -D main
+          git branch -m main
+          git push -f origin main
