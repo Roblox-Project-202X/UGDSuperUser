@@ -29,8 +29,6 @@ fi
 
 # pkg i libsqlite -y
 echo
-dsuperuser sudo dsuperuser -v
-echo
 echo "Đã cài đặt thành công dsuperuser!"
 echo "Bạn có thể sử dụng lệnh 'dsuperuser su' hoặc 'su' để truy cập quyền root."
 echo "Nếu bạn muốn sử dụng lệnh 'sudo', hãy sử dụng lệnh 'sudo'."
